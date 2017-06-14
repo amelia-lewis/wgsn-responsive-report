@@ -1,0 +1,111 @@
+#report-cover {
+	width: 100%;
+	// height: calc(100vh ~"-" @header-height ~"-" 122px);
+	height: 800px;
+	position: relative;
+
+	.report-cover--img {
+		position: absolute;
+		background: black no-repeat center / cover;
+	}
+
+	// BIG IDEAS
+	&.report-cover--1 {
+		color: white;
+		
+		.report-cover--img {
+			top: 20%;
+			right: 25%;
+			bottom: 50px;
+			left: 0;
+		}
+
+		.content-wrap,
+		.grid {
+			height: 100%;
+		}
+
+		.report-cover--subtitle span {
+			display: inline;
+			font-weight: 700; 
+			background: #A2CABF;
+			box-shadow: 20px 0 0 #A2CABF, -20px 0 0 #A2CABF;
+		}
+
+		.report-cover--title {
+			margin-top: 0;
+			line-height: 100%;
+			
+			@media (min-width: @screen-sm-min) {
+				font-size: 80px;
+			}
+
+			@media (min-width: @screen-md-min) {
+				font-size: 110px;
+			}
+
+			@media (min-width: @screen-lg-min) {
+				font-size: 150px;
+			}
+		}
+
+		.grid .grid__col-xs-12:last-of-type .report-cover--category {
+			@media (min-width: @screen-md-min) {
+				transform: rotate(90deg) translate(110%, 0);
+				transform-origin: right top;
+			}
+		}
+	}
+
+	// RETAIL ANALYSIS
+	&.report-cover--2 {
+		color: white;
+		
+		.report-cover--img {
+			top: 0;
+			right: 50%;
+			bottom: 0;
+			left: 0;
+			background-position: center top;
+		}
+
+		.content-wrap,
+		.grid {
+			height: 100%;
+		}
+
+		.report-cover--subtitle span {
+			display: inline;
+			font-weight: 600;
+			background: #CA2249;
+			box-shadow: 20px 0 0 #CA2249, -20px 0 0 #CA2249;
+		}
+
+		.report-cover--title {
+			margin-top: 0;
+			line-height: 100%;
+			background: #FF2A59;
+			margin-left: auto;
+			box-shadow: 20px 0 0 #FF2A59, -20px 0 0 #FF2A59;
+			
+			@media (min-width: @screen-sm-min) {
+				font-size: 80px;
+			}
+
+			@media (min-width: @screen-md-min) {
+				font-size: 110px;
+			}
+
+			@media (min-width: @screen-lg-min) {
+				font-size: 150px;
+			}
+		}
+
+		.grid .grid__col-xs-12:last-of-type .report-cover--category {
+			@media (min-width: @screen-md-min) {
+				transform: rotate(90deg) translate(110%, 0);
+				transform-origin: right top;
+			}
+		}
+	}
+}

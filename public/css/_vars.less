@@ -1,0 +1,93 @@
+// ====================
+// Layout Vars
+// ====================
+@header-height: 40px;
+
+
+// ====================
+// Screen sizes
+// ====================
+
+// Extra small screen / phone
+@screen-xs-min: 480px;
+
+// Small screen / tablet
+@screen-sm-min: 768px;
+
+// Medium screen / desktop
+@screen-md-min: 1000px;
+
+// Large screen / wide desktop
+@screen-lg-min: 1200px;
+
+// Large screen / extra wide desktop
+@screen-xl-min: 1500px;
+
+// So media queries dont overlap when required, provide a maximum
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+
+// ====================
+// Colors
+// ====================
+
+@wgsn-primary-color: #0000dd;
+@wgsn-secondary-color: lighten(@wgsn-primary-color, 30);
+@wgsn-tertiary-color: lighten(@wgsn-primary-color, 50);
+
+@wgsn-grey-md: #a7a9ac;
+@wgsn-grey-lt: #e4e5e6;
+
+@insight-primary-color: #7300a6;
+@insight-secondary-color: #9d4dc1;
+@insight-tertiary-color: #f1e5f6;
+
+@fashion-primary-color: #fe484f;
+@fashion-secondary-color: #fe7f84;
+@fashion-tertiary-color: #ffebec;
+
+@li-primary-color: #ffc430;
+@li-secondary-color: #ffd66e;
+@li-tertiary-color: #fff9e8;
+
+@instock-primary-color: #178fff;
+@instock-secondary-color: #5db1ff;
+@instock-tertiary-color: #e7f4ff;
+
+@barometer-primary-color: #04C2DB;
+@barometer-secondary-color: #4ED4E5;
+@barometer-tertiary-color: #E5F9FC;
+
+@styletrial-primary-color: #00b697;
+@styletrial-secondary-color: #4dccb6;
+@styletrial-tertiary-color: #e3f7f4;
+
+@mindset-primary-color: #231f20;
+@mindset-secondary-color: #908E8E; // never actually used in branding, just here to follow the primary/secondary/tertiary pattern
+@mindset-tertiary-color: #ffffff;
+
+@futures-primary-color: @wgsn-primary-color;
+@futures-secondary-color: @wgsn-secondary-color;
+@futures-tertiary-color: @wgsn-tertiary-color;
+
+
+@xlt-grey: #f2f2f2;
+@lt-grey: @wgsn-grey-lt;
+@md-grey: @wgsn-grey-md;
+@dk-grey: #555;
+@xdk-grey: #222;
+
+@yellow: #f8bd34;
+@red: #da1c24;
+
+
+// Labels
+@label-red: #fc6360;
+@label-orange: #f7a550;
+@label-yellow: #f3cd56;
+@label-green: #70ca57;
+@label-blue: #51b9f1;
+@label-purple: #cf8bdf;
+@label-grey: #a4a4a7;

@@ -1,0 +1,111 @@
+extends ../layout
+
+block append vars
+	- bodyclass = 'report-view'
+
+block content
+	section#report-header
+		.content-wrap
+			.grid.grid--align-end
+				.grid__col-xs-12.grid__col-md-6
+					p: a.styled(href="/") ← Back to Future Trends
+					h3.report-header--title Big Ideas S/S 19: Womenswear
+
+				.grid__col-xs-12.grid__col-md-6
+					p.report-header--info By 
+						a.styled(href="/") Robbie Sinclair
+						| &nbsp;&nbsp;/&nbsp;&nbsp; 
+						a.styled(href="/") 01.06.17
+
+	section#report-cover.report-cover--1(style="background-color: #A2CABF;")
+		.report-cover--img(style="background-image: url('https://www.wgsn.com/storage/vol23/ss_image_store/31/34/40/72/original_tumblr_oakorkxlnV1r6tt1vo1_1280.jpg');")
+		.content-wrap
+			.grid.grid--align-end
+				.grid__col-xs-12.grid__col-md-8
+					h2.report-cover--subtitle: span Women &amp; Young Women
+					h1.report-cover--title Big
+						br
+						| Ideas
+
+				.grid__col-xs-12.grid__col-md-4.grid--align-self-start
+					h3.report-cover--category Future Trends S/S 19
+
+	section#report-section.report-section--1
+		.content-wrap.block-hor-sm
+			h2.report-section--title 01—Be Authentic
+
+			.report-section-content-container
+				.report-container.report-container--1
+					.report-copy.report-copy--1
+						p A saturated market sees consumers take less interest in fast-fashion items, instead desiring a long lasting, quality product. The preference for one-off items and the growing need to be an individual is evident in the celebration of diversity on recent catwalks, seen at Gucci.
+						p Authenticity is encouraged by the rise of new brands, such as This Is The Uniform, taking pride in producing all goods in house. It creates limited runs that stand at odds with mass consumption, promoting a sustainable and engaged approach to fashion. Meanwhile, brands like Ader Error use clever cutting to re-work classic, easy wear pieces.
+
+					.report-img.report-img--1
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/60/34/40/72/original_4.jpg")
+						.caption.caption--1 Ader Error
+						include ../partials/img-toolkit
+
+				.report-container.report-container--2
+					.report-img.report-img--2
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/40/34/40/72/original_11313439_586859248122150_1190393600_n.jpg")
+						.caption.caption--1 Ader Error
+						include ../partials/img-toolkit
+
+					.report-img.report-img--3
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/11/34/40/72/original_Screen_Shot_2017_05_16_at_22.23.44.jpg")
+						.caption.caption--1 The Is The Uniform
+						include ../partials/img-toolkit
+
+	section#report-section.report-section--1
+		.content-wrap.block-hor-sm
+			h2.report-section--title 02—Love Yourself
+
+			.report-section-content-container
+				.report-container.report-container--1
+					.report-copy.report-copy--1
+						p After seasons of political, empowering and positive messaging within T-shirt graphics, it's time to put words into action. We are entering a new era of love and, crucially, self love.
+						p A celebration of the female form will highlight inclusivity as an important factor for future business growth. Retailers should consider a wider audience and include a greater variety of shapes, ages, races, religions and gender identities in their collections and campaigns.
+						p Positivity and action are key factors for the future. A focus on the social responsibility to do the 'right' thing is set to be ever present.
+
+					.report-img.report-img--1
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/32/34/40/72/original_Vogue_Spain_April_2017_Cameron_Russell_Adwoa_Aboah_by_Emma_Summerton_1.jpg")
+						.caption.caption--1 Vogue España
+						include ../partials/img-toolkit
+
+				.report-container.report-container--2
+					.report-img.report-img--2
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/91/34/40/72/original_tumblr_onydpdodwc1qbhipzo1_1280.jpg")
+						.caption.caption--1 H&amp;M
+						include ../partials/img-toolkit
+
+					.report-img.report-img--3
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/70/34/40/72/original_6666.jpg")
+						.caption.caption--1 The Editorial Magazine
+						include ../partials/img-toolkit
+
+	section#report-section.report-section--1
+		.content-wrap.block-hor-sm
+			h2.report-section--title 03—Re-establish Brand Roots
+
+			.report-section-content-container
+				.report-container.report-container--1
+					.report-section--copy
+						p The fashion industry is searching for a more focused style of working. Designers and brands will look back at what worked well in order to rediscover the roots of the business.
+						p In Dries Van Noten's A/W 17/18 collection, he celebrated his 100th show by reimagining his favourite pieces from the archives. He said: "There is something of the past, something of the future throughout." Acne Studios' Biå Konst collections also refer to brand DNA. 
+						p Taking beloved pieces that work historically and bringing them into the future has an emotional grip. It's familiar, but not nostalgic.
+
+					.report-img.report-img--1
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/50/34/40/72/original_14E165_U80_A.jpg")
+						.caption.caption--1 Acne Studios Blå Konst
+						include ../partials/img-toolkit
+
+				.report-container.report-container--2
+					.report-img.report-img--2
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/12/34/40/72/original_van_noten_bks_m_rf17_3945_e1488394510799.jpg")
+						.caption.caption--1 A Modern Matter
+						include ../partials/img-toolkit
+
+					.report-img.report-img--3
+						img(src="https://www.wgsn.com/storage/vol23/ss_image_store/80/34/40/72/original_6823a71ff0ace1dde684d3898e3a230b.jpg")
+						.caption.caption--1 The Editorial Magazine
+						include ../partials/img-toolkit

@@ -1,0 +1,335 @@
+// ====================
+// Fonts
+// ====================
+@import url('/assets/common/css/fonts/licensed/all_en.css');
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-Book.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-BookItalic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-Medium.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-MediumItalic.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC Caslon 224";
+  src: url("../assets/fonts/Caslon224Std-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+.serif {
+  font-family: "ITC Caslon 224", "Georgia", serif;
+}
+
+.sans-serif {
+  font-family: "Graphik", sans-serif;
+}
+
+
+// ====================
+// Weight
+// ====================
+.text-normal, p, span, li {
+  font-weight: 400;
+}
+
+.text-bold, strong, label, h4, h5 {
+  font-weight: 600;
+}
+
+.text-bolder, h1, h2, h3 {
+  font-weight: 700;
+}
+
+
+// ====================
+// Style
+// ====================
+.text-italic, em {
+  font-style: italic;
+}
+
+.text-underline {
+  border-bottom: 1px solid @dk-grey;
+  display: inline-block;
+}
+
+
+// ====================
+// Alignment
+// ====================
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// ====================
+// Transformation
+// ====================
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-no-transform {
+  text-transform: none;
+}
+
+
+// ====================
+// Margins
+// ====================
+ul, ol, li, p {
+  margin: 0 0 0.5em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1em 0 0.5em;
+}
+
+section > h1:first-child, div > h1:first-child,
+section > h2:first-child, div > h2:first-child,
+section > h3:first-child, div > h3:first-child,
+section > h4:first-child, div > h4:first-child {
+  margin: 0 0 0.5em;
+}
+
+.tight {
+  margin: 0 !important;
+}
+
+
+// ====================
+// Sizing
+// ====================
+h1, h2, h3, h4, h5 {
+  line-height: 120%;
+}
+
+p, li, a, .text-smaller, small {
+  line-height: 140%;
+}
+
+h1 {
+  font-size: 30px;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+p, li, a, code {
+  font-size: 14px;
+
+  > * {
+    line-height: 100%;
+  }
+}
+
+.text-larger {
+  font-size: 18px;
+}
+
+.text-smaller, small {
+  font-size: 10px;
+}
+
+
+// ====================
+// Styles
+// ====================
+// LINKS
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.styled {
+  position: relative;
+  background-image: linear-gradient(to right, @wgsn-primary-color 50%, fade(@wgsn-primary-color, 50%) 0%);
+  background-size: 200% 1px;
+  background-repeat: no-repeat;
+  background-position: 100% bottom;
+  display: inline;
+  transition: all 300ms;
+  body.insight & { background-image: linear-gradient(to right, @insight-primary-color 50%, fade(@insight-primary-color, 50%) 0%); }
+  body.wgsn & { background-image: linear-gradient(to right, @fashion-primary-color 50%, fade(@fashion-primary-color, 50%) 0%); }
+  body.hbl &, body.li & { background-image: linear-gradient(to right, @li-primary-color 50%, fade(@li-primary-color, 50%) 0%); }
+  body.instock & { background-image: linear-gradient(to right, @instock-primary-color 50%, fade(@instock-primary-color, 50%) 0%); }
+  body.barometer & { background-image: linear-gradient(to right, @barometer-primary-color 50%, fade(@barometer-primary-color, 50%) 0%); }
+  body.styletrial & { background-image: linear-gradient(to right, @styletrial-primary-color 50%, fade(@styletrial-primary-color, 50%) 0%); }
+  body.mindset & { background-image: linear-gradient(to right, @mindset-primary-color 50%, fade(@mindset-primary-color, 50%) 0%); }
+  body.futures & { background-image: linear-gradient(to right, @futures-primary-color 50%, fade(@futures-primary-color, 50%) 0%); }
+
+  &:hover {
+    background-position: 0 bottom;
+  }
+}
+
+
+// TEXT COLORS
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: @md-grey;
+}
+
+.text-red {
+  color: @red;
+}
+
+
+// LISTS
+.list-bare {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ul-styled {
+  list-style: none;
+  padding-left: 20px;
+  
+  li {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 12px;
+      height: 3px;
+      left: -20px;
+      top: 6px;
+      .primary-faded-background-color(50%);
+    }
+  }
+
+  ul, ol {
+    list-style: none;
+    .block-top-sm;
+  }
+}
+
+.ol-styled {
+  list-style: none;
+  padding-left: 20px;
+
+  li {
+    position: relative;
+    counter-increment: step-counter;
+
+    &:before {
+      content: counter(step-counter);
+      position: absolute;
+      display: block;
+      width: 14px;
+      left: -20px;
+      top: 0;
+      text-align: center;
+      .text-bolder;
+      .primary-faded-text-color(50%);
+    }
+  }
+
+  ol, ul {
+    list-style: none;
+    .block-top-sm;
+  }
+}
+
+
+// HIGHLIGHTS
+.header-highlight {
+  display: inline;
+  background-image: linear-gradient(transparent 50%, fade(@wgsn-primary-color, 30%) 0%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  body.insight & { background-image: linear-gradient(transparent 50%, fade(@insight-primary-color, 30%) 0%); }
+  body.wgsn & { background-image: linear-gradient(transparent 50%, fade(@fashion-primary-color, 30%) 0%); }
+  body.hbl &, body.li & { background-image: linear-gradient(transparent 50%, fade(@li-primary-color, 30%) 0%); }
+  body.instock & { background-image: linear-gradient(transparent 50%, fade(@instock-primary-color, 30%) 0%); }
+  body.barometer & { background-image: linear-gradient(transparent 50%, fade(@barometer-primary-color, 30%) 0%); }
+  body.styletrial & { background-image: linear-gradient(transparent 50%, fade(@styletrial-primary-color, 30%) 0%); }
+  body.mindset & { background-image: linear-gradient(transparent 50%, fade(@mindset-primary-color, 30%) 0%); }
+  body.futures & { background-image: linear-gradient(transparent 50%, fade(@futures-primary-color, 30%) 0%); }
+}

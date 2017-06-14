@@ -1,0 +1,25 @@
+doctype
+block vars
+	- var bodyclass = null
+
+html
+	head
+		title WGSN
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="/css/main.css")
+		link(rel="stylesheet", href="/css/reflexgrid.css")
+		//- link(rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css")
+		//- link(href="https://fonts.googleapis.com/css?family=Coming+Soon", rel="stylesheet", type="text/css")
+		link(rel="shortcut icon", type="image/x-icon", href="https://www.wgsn.com/wp-content/themes/stylesight/favicon.ico")
+		script(src="https://use.fontawesome.com/7c5bf366d0.js")
+	
+	body(class=bodyclass + " wgsn")
+		header
+		
+		#content
+			block content
+
+		footer
+			p Home&nbsp;&nbsp;|&nbsp;&nbsp;About WGSN&nbsp;&nbsp;|&nbsp;&nbsp;Help&nbsp;&nbsp;|&nbsp;&nbsp;Legal Info
+
+	include partials/scripts

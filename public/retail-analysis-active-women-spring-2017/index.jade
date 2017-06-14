@@ -1,0 +1,78 @@
+extends ../layout
+
+block append vars
+	- bodyclass = 'report-view'
+
+block content
+	section#report-header
+		.content-wrap
+			.grid.grid--align-end
+				.grid__col-xs-12.grid__col-md-6
+					p: a.styled(href="/") ← Back to Active
+					h3.report-header--title Retail Analysis – Active Women Spring 2017
+
+				.grid__col-xs-12.grid__col-md-6
+					p.report-header--info By 
+						a.styled(href="/") Jessica Harman
+						| &nbsp;&nbsp;/&nbsp;&nbsp; 
+						a.styled(href="/") 05.04.17
+
+	section#report-cover.report-cover--2(style="background-color: #F4A2AD;")
+		.report-cover--img(style="background-image: url('https://www.wgsn.com/storage/vol22/ss_image_store/58/69/48/62/original_ecom100317_Bershka_2.jpg');")
+		.content-wrap
+			.grid.grid--align-center
+				.grid__col-xs-12.grid--justify-end
+					h2.report-cover--subtitle: span Retail Analysis &middot; Women &middot; Spring 2017
+					h1.report-cover--title Active
+
+	section#report-section.report-section--2
+		.content-wrap.block-hor-sm
+			h2.report-section--title Key Messages
+			.report-quote.report-quote--1
+				p Spring’s retail drops have a lightweight and puritan aesthetic throughout. practicality and function are still key but there’s a quieter and more sophisticated look emerging, with clean-lined silhouettes and a softer take on colour-blocking.
+				p — Jessica Harman, active editor at WGSN
+			
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/fo_image_store/cached/boards/71734/58d92d3098224d65d4239872/en_c_109e4ceea6e_oysho.png")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/07/69/48/62/original_ecom100317_Asos.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/56/69/48/62/original_ecom100317_Adidas.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/01/79/48/62/original_ecom100317_free_people.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/fo_image_store/cached/boards/71734/58d92d3098224d65d4239872/en_c_11ea7565550_CCecomm7010.png")
+
+			.swiper-button-prev
+			.swiper-button-next
+
+	section#report-section.report-section--2
+		.content-wrap.block-hor-sm
+			h2.report-section--title Laced Up
+			.report-copy.report-copy--1
+				p Latticework emerges from the lattice bralette of winter 2016, transformed into more relaxed and lounge-led silhouettes. Lace-up detailing evolves through chunky flat and circular drawcords, lopped through rectangular and circular hardware eyelets. Functionality is optional for this theme, with the lace-ups working as fly closures to adjust fit through the body, or, alternatively, purely for decoration.
+			
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/47/69/48/62/original_ecom100317_Bershka.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/60/89/48/62/original_ecom100317_we_wore_what_x_strutt_this.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/03/79/48/62/original_ecom100317_IMG_6771F.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/94/79/48/62/original_ecom100317_L_urv_2.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/54/79/48/62/original_ecom100317_JONATHAN_SIMKHAI_X_CARBON38.jpg")
+
+			.swiper-button-prev
+			.swiper-button-next
+
+	section#report-section.report-section--2
+		.content-wrap.block-hor-sm
+			h2.report-section--title Active Chintz
+			.report-copy.report-copy--1
+				p Florals take on a directional edge for active. Darker base tones dominate, adding a hard edge to the classically feminine pattern. The original chintz is made contemporary via the introduction of vibrant colours. As highlighted in the S/S 17 forecast, the theme has evolved with a moodier aesthetic, taking on the forms of print and embroidery across product categories.
+			
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/09/69/48/62/original_ecom100317_Bershka_2.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/85/79/48/62/original_ecom100317_Mink_Pink.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/76/79/48/62/original_ecom100317_oasis_wk45_Pineapple_GIF.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/79/79/48/62/original_ecom100317_uk_2FWomens_2FGifts_2FGifts_For_Her_2FPHILOLA_Oriental_Blossom_arm_band_Light_Grey_2FDS7W_PHILOLA_LT_GREY_1.jpg.jpg")
+				.swiper-slide: img(src="https://www.wgsn.com/storage/vol22/ss_image_store/99/79/48/62/original_ecom100317_Unknown.jpg")
+
+			.swiper-button-prev
+			.swiper-button-next

@@ -1,0 +1,194 @@
+#report-section {
+	padding: 100px 0;
+
+	.report-container {
+		position: relative;
+		overflow: auto;
+	}
+
+	.report-img {
+		position: relative;
+		width: 100%;
+		height: auto;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		.caption {
+			position: absolute;
+			transition: all 300ms;
+		}
+		
+		.caption--1 {
+			bottom: 5px;
+			right: 5px;
+			background: fade(white, 80%);
+			font-size: 10px;
+			padding: 3px 5px 2px;
+		}
+	}
+
+	// BIG IDEAS
+	&.report-section--1 {
+		.report-section--title {
+			position: relative;
+			margin: 0 0 30px;
+			background: white;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				bottom: -10px;
+				background: @lt-grey;
+				z-index: -1;
+			}
+		}
+
+		.report-section-content-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: stretch;
+			align-items: flex-start;
+
+			.report-img {
+				margin: 0 0 20px;
+			}
+
+			.report-copy--1 {
+				margin: 0 0 50px;
+			}
+		}
+
+		@media (min-width: @screen-md-min) {
+			.report-section--title {
+				margin: 0;
+				transform: rotate(90deg) translate(-36px, 0);
+				transform-origin: left bottom;
+			}
+
+			.report-section-content-container {
+				flex-direction: row;
+				padding-left: 100px;
+				margin-top: -31px;
+
+				.report-img {
+					margin: 0 0 50px;
+				}
+
+				.report-container--1 {
+					flex-basis: 400px;
+					overflow: visible;
+
+					.report-copy--1 {
+						padding: 0 50px 0 0;
+					}
+
+					.report-img--1 {
+						width: calc(~"100% + 50px");
+
+						.caption--1 {
+							left: 5px;
+							right: auto;
+						}
+
+						#img-toolkit {
+							left: 0;
+							right: auto;
+							padding: 50px 100px 10px 10px;
+							background: -webkit-linear-gradient(-165deg, rgba(0,0,0,0) 70%,rgba(0,0,0,0.65) 100%);
+						}
+					}
+				}
+
+				.report-container--2 {
+					.report-img--3 {
+						width: calc(~"100% - 150px");
+						margin: 50px 50px 0 100px;
+					}
+				}
+			} 
+		}
+	} // end .report-section--1
+
+	// RETAIL ANALYSIS
+	&.report-section--2 {
+		.report-section--title {
+			position: relative;
+			margin: 0 0 30px;
+			display: inline-block;
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 80%;
+				left: -10px;
+				right: -60px;
+				bottom: -6px;
+				background: #FF2A59;
+				z-index: -1;
+			}
+		}
+
+		.report-copy--1 {
+			max-width: 600px;
+			margin: 0 0 40px;
+		}
+
+		.report-quote--1 {
+			max-width: 600px;
+			border-left: 10px solid @xlt-grey;
+			padding-left: 30px;
+			margin: 20px 0 40px;
+			position: relative;
+
+			&:after {
+				content: '”';
+				position: absolute;
+				display: block;
+				top: -60px;
+				right: 0;
+				font-size: 260px;
+				font-family: "Georgia", serif;
+				z-index: -1;
+				color: @xlt-grey;
+			}
+
+			p {
+				font-size: 18px;
+
+				&:last-of-type {
+					font-weight: 600;
+				}
+			}
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 90vh;
+
+			.swiper-slide {
+				background: @lt-grey;
+				width: auto;
+
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
+
+			.swiper-button-prev,
+			.swiper-button-next {
+				background-color: fade(white, 80%);
+				width: 40px;
+				height: 40px;
+				margin-top: 20px;
+				background-size: auto 50%;
+			}
+		}
+	} // end .report-section--2
+}
